@@ -1,0 +1,32 @@
+{
+    "8109829627": [
+        {
+            "topic": "Bot haqida",
+            "opinion": "Menga bot yoqdi",
+            "rating": 5,
+            "timestamp": "2025-04-28 22:34:23"
+        }
+    ],
+    "1807890167": [
+        {
+            "topic": "Salom",
+            "opinion": "Zor",
+            "rating": 5,
+            "timestamp": "2025-04-28 23:29:12"
+        },
+        {
+            "topic": "bot haqida fikrim",
+            "opinion": "yaxshi ishlaydi",
+            "rating": 5,
+            "timestamp": "2025-04-29 23:25:40"
+        }
+    ],
+    "520465917": [
+        {
+            "topic": "bot haqida",
+            "opinion": "yomon imsh layapti",
+            "rating": 3,
+            "timestamp": "2025-04-30 10:48:42"
+        }
+    ]
+}

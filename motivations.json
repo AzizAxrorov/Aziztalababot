@@ -1,0 +1,76 @@
+{
+    "motivations": [
+        {
+            "id": 1,
+            "text": "Maqsad o'sgan sayin odam o'sadi",
+            "author_id": 1807890167,
+            "author_username": "Azizjon2402",
+            "added_date": "2025-04-28 23:23:10",
+            "status": "approved",
+            "likes": 2,
+            "liked_by": [
+                "1807890167",
+                "5165462838"
+            ]
+        },
+        {
+            "id": 2,
+            "text": "Siz juda ko'p o'ylaysiz, bu sizni o'ldiradi. Kamroq o'ylang, ko'proq harakat qiling.",
+            "author_id": 1807890167,
+            "author_username": "Azizjon2402",
+            "added_date": "2025-04-28 23:25:04",
+            "status": "rejected",
+            "likes": 0,
+            "liked_by": []
+        },
+        {
+            "id": 3,
+            "text": "Siz juda ko'p o'ylaysiz, bu sizni o'ldiradi. Kamroq o'ylang, ko'proq harakat qiling.",
+            "author_id": 1807890167,
+            "author_username": "Azizjon2402",
+            "added_date": "2025-04-28 23:25:29",
+            "status": "approved",
+            "likes": 1,
+            "liked_by": [
+                "1807890167"
+            ]
+        },
+        {
+            "id": 4,
+            "text": "Siz juda ko'p o'ylaysiz, bu sizni o'ldiradi. Kamroq o'ylang, ko'proq harakat qiling.",
+            "author_id": 5165462838,
+            "author_username": "sobirrr083",
+            "added_date": "2025-04-29 08:53:50",
+            "status": "approved",
+            "likes": 2,
+            "liked_by": [
+                "1807890167",
+                "520465917"
+            ]
+        },
+        {
+            "id": 5,
+            "text": "Ilm – dunyo boyligidan afzal, chunki ilm seni himoya qiladi, boylikdan esa sen uni himoya qilasan.",
+            "author_id": 1807890167,
+            "author_username": "Azizjon2402",
+            "added_date": "2025-04-29 23:18:16",
+            "status": "approved",
+            "likes": 1,
+            "liked_by": [
+                "1807890167"
+            ]
+        },
+        {
+            "id": 6,
+            "text": "hech qachon sinma",
+            "author_id": 520465917,
+            "author_username": "BMurotjonX",
+            "added_date": "2025-04-30 10:54:33",
+            "status": "approved",
+            "likes": 1,
+            "liked_by": [
+                "1807890167"
+            ]
+        }
+    ]
+}
