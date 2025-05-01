@@ -4,26 +4,35 @@ import json
 import uuid
 from datetime import datetime, timedelta
 import pytz
-import asyncio
-import logging
-from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes, CallbackQueryHandler
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+
+
+#from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes, CallbackQueryHandler
+#from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 import os
 import random
 import time
 import threading
 
-# Logging sozlash
-logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO)
-logger = logging.getLogger(__name__)
 
+from dotenv import load_dotenv
+from telegram.ext import Application, CommandHandler, CallbackQueryHandler, MessageHandler, filters
+from telegram import InlineKeyboardMarkup, InlineKeyboardButton
+import logging
+import asyncio
+#from datetime import datetime
+
+# Logging sozlash
+logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.DEBUG)
+logger = logging.getLogger(__name__)
+# .env faylini yuklash
+load_dotenv()
 # API sozlamalari
-TELEGRAM_TOKEN = "8178324958:AAEA-gSrfAnynGVdLb9vrhspcUBWZkvBJzI"  # Tokenni qo‘ying
-GEMINI_API_KEY = "AIzaSyDA1bp80MVka2huOYr5fbvWbVDNfzTmGSk"
-OPENWEATHER_API_KEY = "1cf6f4f3855774567a7f9826938b6a0c"
-ADMIN_ID = 1807890167
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+OPENWEATHER_API_KEY = os.getenv("OPENWEATHER_API_KEY")
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent"
 MYMEMORY_API_URL = "https://api.mymemory.translated.net/get"
+ADMIN_ID = int(os.getenv("ADMIN_ID"))
 WEATHER_API_URL = "http://api.openweathermap.org/data/2.5/weather"
 FORECAST_API_URL = "http://api.openweathermap.org/data/2.5/forecast"
 
@@ -1852,6 +1861,8 @@ def main():
     load_motivations()
     load_subscriptions()
     load_rsa_data()
+
+
 
     application = Application.builder().token(TELEGRAM_TOKEN).build()
 
