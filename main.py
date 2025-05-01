@@ -1385,7 +1385,8 @@ async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     message_text = update.message.text
     update_user_data(user.id, user.username, user.first_name, message_text)
     state = context.user_data.get('state')
-
+    logger.debug(f"Foydalanuvchi xabari: user_id={user.id}, text={message_text}, state={state}")
+    
     if state == 'admin_parol_kutish':
         if message_text == "1234" and user.id == ADMIN_ID:
             await update.message.reply_text("Admin panel:", reply_markup=admin_menu())
